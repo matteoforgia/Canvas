@@ -20,7 +20,7 @@ public class Rettangolo implements Forma{
     }
     @Override
     public char getCarattere() {
-        char a='#';
+        char a='@';
         return a;
     }    
 
