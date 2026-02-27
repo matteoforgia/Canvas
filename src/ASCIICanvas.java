@@ -12,13 +12,28 @@ public class ASCIICanvas {
         this.forme = new Forma[numeroForme];
     }
     public void aggiungiForma(Forma f) {
-    // TODO salva la forma nell'array
-        
+        for (int i=0; i<forme.length; i++) {
+            if (forme[i]==null) {
+                forme[i]=f;
+                break;
+            }
+        }
     }
     public void rimuoviForma(int indice) {
-    // TODO rimuovi la forma dall'array
+        forme[indice]=null;
     }
     public void disegna() {
-    // TODO implementa
+        for (int y=0; y<altezza; y++) {
+            for (int x=0; x<larghezza; x++) {
+                char carattereDaStampare = ' ';
+                for (int i=0; i<forme.length; i++) {
+                    if (forme[i]!=null && forme[i].contiene(x, y)) {
+                        carattereDaStampare = forme[i].getCarattere();
+                    }
+                }
+                System.out.print(carattereDaStampare);
+            }
+            System.out.println();
+        }
     }
 }
