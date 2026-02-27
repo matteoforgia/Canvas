@@ -3,4 +3,4 @@ public interface Forma {
     boolean contiene(double x, double y);
     // Che carattere devo usare per disegnare?
     char getCarattere();
-    }
+}

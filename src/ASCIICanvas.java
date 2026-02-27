@@ -3,7 +3,7 @@ public class ASCIICanvas {
     private int numeroForme;
     private int larghezza; // Numero di "colonne"
     private int altezza; // Numero di "righe"
-    // TODO Fai il costruttore
+
     
     public ASCIICanvas(int numeroForme, int larghezza, int altezza, Forma[] forme) {
         this.numeroForme = numeroForme;
@@ -21,4 +21,4 @@ public class ASCIICanvas {
     public void disegna() {
     // TODO implementa
     }
-    }
+}
