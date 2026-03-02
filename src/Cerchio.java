@@ -19,8 +19,7 @@ public class Cerchio implements Forma {
     }
     @Override
     public char getCarattere() {
-        char a='#';
-        return a;
+        return carattere;
     }
 
 }

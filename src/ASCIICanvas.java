@@ -5,7 +5,7 @@ public class ASCIICanvas {
     private int altezza; // Numero di "righe"
 
     
-    public ASCIICanvas(int numeroForme, int larghezza, int altezza, Forma[] forme) {
+    public ASCIICanvas(int numeroForme, int larghezza, int altezza) {
         this.numeroForme = numeroForme;
         this.larghezza = larghezza;
         this.altezza = altezza;
@@ -31,7 +31,7 @@ public class ASCIICanvas {
                         carattereDaStampare = forme[i].getCarattere();
                     }
                 }
-                System.out.print(carattereDaStampare);
+                System.out.print(carattereDaStampare+ "  ");
             }
             System.out.println();
         }
